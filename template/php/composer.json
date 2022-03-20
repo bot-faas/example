@@ -1,0 +1,29 @@
+{
+  "name": "bot-faas/php",
+  "description": "bot faas php template",
+  "type": "project",
+  "license": "proprietary",
+  "config": {
+    "classmap-authoritative": true
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "function/",
+      "Pkg\\": "pkg/"
+    }
+  },
+  "require": {
+    "php": ">=7.4",
+    "bot-faas/qq-guild-php-sdk": "^0.1.0",
+    "ext-mongodb": "*",
+    "ext-json": "*",
+    "mongodb/mongodb": "^1.11",
+    "ext-curl": "*"
+  },
+  "repositories": {
+    "packagist": {
+      "type": "composer",
+      "url": "https://mirrors.cloud.tencent.com/composer/"
+    }
+  }
+}
