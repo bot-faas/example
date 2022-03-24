@@ -67,8 +67,11 @@ export HOME_URL=https://bot.icodef.com
 
 ### 开发
 
-使用本地调试模板时，请只修改`function/handler`文件，在平台输入的代码也为本文件的代码，启动函数请用语言函数模板下的`index`文件，其中`demo`文件夹是一些函数的示例，`pkg`文件夹是平台内置的一些函数，用于获取数据库、sdk等操作。
+使用本地调试模板时，请以`function`目录为开发目录，`handler/Handle`方法为入口方法（具体内容请参考语言的模板文件），在平台提交单文件模式的代码也为`handler/Handle`的代码。如果是完整的项目请将整个`function`文件夹压缩为zip进行上传，同时也需要存在语言的包声明文件：php(composer.json)、python(requirements.txt)、node(package.json)，建议使用国内镜像源进行安装。
 
+
+
+本地调试，请使用函数模板下的`index`文件启动函数，其中`demo`文件夹是一些函数的示例，`pkg`文件夹是平台内置的一些函数，用于获取数据库、sdk等操作。
 
 
 ### 数据库

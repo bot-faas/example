@@ -1,0 +1,9 @@
+{
+  "name": "bot-faas/php-function",
+  "description": "bot faas php template",
+  "type": "project",
+  "license": "proprietary",
+  "config": {
+    "classmap-authoritative": true
+  }
+}

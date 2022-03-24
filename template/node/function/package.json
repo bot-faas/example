@@ -1,0 +1,12 @@
+{
+  "name": "bot-faas-node-function",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no tests specified\" && exit 0"
+  },
+  "keywords": [],
+  "author": "BotFaas",
+  "license": "MIT"
+}

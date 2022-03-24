@@ -1,4 +1,8 @@
 venv
 
+*.log
+
+data
+
 *__pycache__/
 dist/

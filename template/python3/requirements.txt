@@ -1,3 +1,3 @@
-flask
+flask~=2.0.3
 qq-bot
-pymongo
+pymongo~=4.0.2

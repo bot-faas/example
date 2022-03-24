@@ -3,6 +3,8 @@
 import { IMessage } from "qq-guild-bot";
 import { OpenAPI } from "../pkg/openapi";
 
+// ts还没支持,先写在这里了
+
 /**
  * const bot = require('qq-guild-bot');
  * @var {*} api bot.OpenAPI

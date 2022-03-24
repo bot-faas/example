@@ -6,7 +6,7 @@ COPY --from=composer /usr/bin/composer /usr/bin/composer
 
 COPY . .
 
-RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositories && \
+RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.cloud.tencent.com/g' /etc/apk/repositories && \
     apk add git gcc g++ make automake openssl-dev autoconf && \
     chmod +x php-extension.sh && \
     sh ./php-extension.sh
