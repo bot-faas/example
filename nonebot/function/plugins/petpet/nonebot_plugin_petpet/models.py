@@ -11,9 +11,9 @@ class UserInfo:
     def __init__(self, user: User, group: str = "", img_url: str = ""):
         self.user: User = user
         self.group: str = group
-        self.name: str = ""
-        self.gender: str = ""  # male 或 female 或 unknown
-        self.img_url: str = img_url
+        self.name: str = user.username
+        self.gender: str = "male"  # male 或 female 或 unknown
+        self.img_url: str = user.avatar
         self.img: IMG = Image.new("RGBA", (640, 640))
 
 
