@@ -54,7 +54,7 @@ export HOME_URL=https://bot.icodef.com
 
 
 #### 启动调试
-> bot-faas-debug程序将在BotFaaS频道中发布，也可以在本频道中获取相关资讯与技术支持。
+> bot-faas-debug程序将在[BotFaaS](https://qun.qq.com/qqweb/qunpro/share?_wv=3&_wwv=128&appChannel=share&inviteCode=aVNjt&appChannel=share&businessType=9&from=181074&biz=ka&shareSource=5)频道中发布，也可以在本频道中获取相关资讯与技术支持。
 
 首先需要启动机器人等消息转发程序，请注意该机器人需要在平台上添加且运行
 
