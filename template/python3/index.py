@@ -1,7 +1,11 @@
+import asyncio
 import json
+import os
+import sys
+from asyncio import iscoroutine
+
 from function import handler
 from flask import request, Flask
-
 
 app = Flask(__name__)
 
@@ -24,8 +28,12 @@ def dict2obj(dictObj):
 def handle():
     json_data = request.get_json()
     data = json.loads(json_data['data'])
-    handler.handle(dict2obj(data))
+    ret = handler.handle(dict2obj(data))
+    if iscoroutine(ret):
+        asyncio.run(ret)
+    return {"code": 0}
 
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080, debug=False)
+    os._exit(0)

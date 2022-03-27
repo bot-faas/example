@@ -54,6 +54,7 @@ export HOME_URL=https://bot.icodef.com
 
 
 #### 启动调试
+> bot-faas-debug程序将在BotFaaS频道中发布，也可以在本频道中获取相关资讯与技术支持。
 
 首先需要启动机器人等消息转发程序，请注意该机器人需要在平台上添加且运行
 
@@ -66,13 +67,15 @@ export HOME_URL=https://bot.icodef.com
 
 
 ### 开发
+> 请注意函数是无状态的，请不要写入有状态数据，有状态数据可以存放在平台提供的数据库中。
 
-使用本地调试模板时，请以`function`目录为开发目录，`handler/Handle`方法为入口方法（具体内容请参考语言的模板文件），在平台提交单文件模式的代码也为`handler/Handle`的代码。如果是完整的项目请将整个`function`文件夹压缩为zip进行上传，同时也需要存在语言的包声明文件：php(composer.json)、python(requirements.txt)、node(package.json)，建议使用国内镜像源进行安装。
+使用本地调试模板时，请以`function`目录为开发目录，`handler/Handle`方法为入口方法（具体内容请参考语言的模板文件），在平台提交单文件模式的代码也为`handler/Handle`的代码。
 
-
+如果是完整的项目请将整个`function`文件夹压缩为zip进行上传，同时也需要存在语言的包声明文件：php(composer.json)、python(requirements.txt)、node(package.json)，同目录下的build_script为构建时的脚本，如果某些依赖包依赖一些系统组建可以使用此脚本文件进行安装，另外推荐在此文件设置中使用国内镜像源，加快构建速度。
 
 本地调试，请使用函数模板下的`index`文件启动函数，其中`demo`文件夹是一些函数的示例，`pkg`文件夹是平台内置的一些函数，用于获取数据库、sdk等操作。
 
+如果是项目级别的代码，由于构建与安装依赖会消耗很长时间与资源，请在本地使用Docker构建并正常运行成功后再在平台上进行发布。
 
 ### 数据库
 

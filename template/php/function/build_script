@@ -1,0 +1,5 @@
+#!/bin/sh
+
+sed -i 's/dl-cdn.alpinelinux.org/mirrors.cloud.tencent.com/g' /etc/apk/repositories
+
+composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/

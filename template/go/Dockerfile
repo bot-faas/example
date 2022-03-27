@@ -8,6 +8,9 @@ WORKDIR /bot-faas
 
 COPY . .
 
+RUN chmod +x ./function/build_script && \
+    ./function/build_script
+
 RUN go build -o handler .
 
 FROM alpine:3.14

@@ -1,10 +1,11 @@
+nonebot2==2.0.0b2
 nonebot-adapter-qqguild==0.1.1
+numpy==1.22.3
+opencv-python-headless==4.5.5.64
 requests~=2.27.1
-janus~=1.0.0
 httpx~=0.22.0
 websockets~=10.2
 imageio~=2.16.1
-numpy~=1.22.3
 fonttools~=4.31.2
 Pillow~=9.0.1
 emoji~=1.7.0

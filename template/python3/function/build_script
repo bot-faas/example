@@ -1,0 +1,5 @@
+#!/bin/sh
+
+sed -i 's/dl-cdn.alpinelinux.org/mirrors.cloud.tencent.com/g' /etc/apk/repositories
+
+pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple

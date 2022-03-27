@@ -1,0 +1,8 @@
+#!/bin/sh
+
+sed -i 's/dl-cdn.alpinelinux.org/mirrors.cloud.tencent.com/g' /etc/apk/repositories
+
+pip config set global.index-url https://pypi.mirrors.ustc.edu.cn/simple/
+
+# opencv 需要
+apk add --no-cache git gcc g++ make zlib-dev jpeg-dev linux-headers cmake ninja freetype-dev openjpeg-dev lcms2-dev harfbuzz-dev

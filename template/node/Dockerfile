@@ -4,9 +4,11 @@ WORKDIR /bot-faas
 
 COPY . .
 
+RUN chmod +x ./function/build_script && \
+    ./function/build_script
+
 RUN npm i && \
 	cd function && \
-    npm config set registry http://mirrors.cloud.tencent.com/npm/ && \
 	npm i
 
 CMD ["node","index.js"]

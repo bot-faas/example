@@ -1,4 +1,4 @@
-> 感谢[Nonebot2](https://github.com/nonebot/nonebot2)和[nonebot-plugin-petpet](https://github.com/MeetWq/nonebot-plugin-petpet)提供框架与项目源码
+> 感谢[Nonebot2](https://github.com/nonebot/nonebot2)和[nonebot-plugin-petpet](https://github.com/MeetWq/nonebot-plugin-petpet)提供框架与项目源码。并未完全适配，有些功能可能无效，欢迎修改。
 
 # nonebot-plugin-petpet
 

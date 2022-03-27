@@ -1,0 +1,3 @@
+#!/bin/sh
+
+sed -i 's/dl-cdn.alpinelinux.org/mirrors.cloud.tencent.com/g' /etc/apk/repositories
