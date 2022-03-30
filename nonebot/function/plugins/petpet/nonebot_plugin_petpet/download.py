@@ -6,7 +6,7 @@ from aiocache import cached
 from nonebot.log import logger
 
 
-data_path = Path() / "data" / "petpet"
+data_path = Path() / "function" / "data" / "petpet"
 
 
 class DownloadError(Exception):

@@ -18,7 +18,8 @@ def run():
     driver = nonebot.get_driver()
     driver.register_adapter(QQ_频道Adapter)
     nonebot.load_plugin('function.plugins.echo')
-    nonebot.load_plugin('function.plugins.petpet.nonebot_plugin_petpet.data_source')
+    nonebot.load_plugin('function.plugins.petpet.nonebot_plugin_petpet')
+    nonebot.load_plugin('function.plugins.memes.nonebot_plugin_memes')
     nonebot.run(app="__mp_main__:app")
 
 
